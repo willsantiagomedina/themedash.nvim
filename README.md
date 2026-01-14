@@ -11,14 +11,14 @@ ThemeDash.nvim is a minimal floating dashboard for previewing and switching betw
 ### lazy.nvim
 ```lua
 {
-  "yourname/themedash.nvim",
+  "willsantiagomedina/themedash.nvim",
 }
 ```
 
 ### packer.nvim
 ```lua
 use({
-  "yourname/themedash.nvim",
+  "willsantiagomedina/themedash.nvim",
 })
 ```
 
@@ -46,6 +46,15 @@ require("themedash").setup({
   auto_sync = true,  -- run :Lazy sync after adding a repo
 })
 ```
+
+### ThemeDashInstall
+ThemeDash can add a colorscheme repo to lazy.nvim for you:
+
+```vim
+:ThemeDashInstall
+```
+
+It accepts `owner/repo` or full GitHub URLs, then runs `:Lazy sync` by default.
 
 ## Keybindings (buffer-local)
 - `j` / `k` or `↓` / `↑` : move selection
